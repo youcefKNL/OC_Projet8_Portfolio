@@ -1,0 +1,74 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% auto 1% auto;
+  max-width: 1400px;
+  width: 100%;
+  @media screen and (max-width: 1800px) {
+    margin: 1% 5% 1% 5%;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    @media screen and (max-width: 1000px) {
+      font-size: 1em;
+    }
+  }
+  nav {
+    ul {
+      @include verticalCenter;
+      height: 100%;
+
+      a {
+        margin-left: 20px;
+        font-size: 1.5em;
+        transition: 0.3s;
+        @media screen and (max-width: 1000px) {
+          font-size: 1em;
+        }
+
+        &.nav-active {
+          color: rgb(248, 64, 40);
+
+          &::after {
+            background: rgb(248, 64, 40);
+            color: rgb(248, 64, 40);
+          }
+        }
+        &:hover {
+          color: rgb(248, 64, 40);
+        }
+      }
+    }
+  }
+}
+.nav-active {
+  position: relative;
+}
+
+.nav-active::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: $white;
+  position: absolute;
+  border-radius: 10px;
+  bottom: -10%;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  animation-name: slideFromRight;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

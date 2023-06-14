@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Manga";
+  src: url("../assets/fonts/gang_of_three/go3v2.ttf") format("truetype");
+}
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+$font-1: "Manga", sans-serif;
+
+$color-1: #002366;
+$color-2: #000000;
+$color-3: rgb(248, 64, 40);
+$white: #ffffff;
+
+$bg-img-home: url("../assets/img/homeImg.jpg");
+$bg-img-about: url("../assets/img/aboutImg.jpg");
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-1;
+  color: $white;
+  // @include verticalCenter;
+  // Generate background
+  background: linear-gradient(90deg, #002466, #1100ff, #5c29e9);
+  background-size: 300% 300%;
+  animation: gradient 3s alternate infinite;
+  //position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  @keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+}
+
+li {
+  list-style-type: none;
+}
+a,
+a:visited {
+  color: $white;
+  text-decoration: none;
+}

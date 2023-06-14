@@ -1,0 +1,99 @@
+.footer {
+  width: 100%;
+  @mixin transformScale($size: 1) {
+    transform: scale($size);
+    -ms-transform: scale($size);
+    -webkit-transform: scale($size);
+  }
+
+  text-align: center;
+
+  .socialIcons {
+    padding: 0;
+    list-style: none;
+    margin: 1.5em;
+    animation-name: animFooter;
+    animation-duration: 3s;
+    @keyframes animFooter {
+      0% {
+        transform: translateY(400px) rotate(0);
+        opacity: 0;
+      }
+      100% {
+        transform: translatex(0) rotate(0);
+        opacity: 1;
+      }
+    }
+    li {
+      display: inline-block;
+      margin: 0 50px;
+      position: relative;
+      font-size: 2em;
+    }
+
+    i {
+      color: #fff;
+      position: absolute;
+      top: 17px;
+      left: 17px;
+      transition: all 0.2s ease-out;
+    }
+
+    a {
+      display: inline-block;
+
+      &:before {
+        @include transformScale();
+        content: " ";
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        border: 2px white solid;
+        display: block;
+        transition: all 0.2s ease-out;
+      }
+
+      &:hover:before {
+        transform: scale(0);
+        transition: all 0.2s ease-in;
+      }
+
+      &:hover i {
+        @include transformScale(2.5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.2sease-in;
+      }
+    }
+    .linkedin:before {
+      background: #0a66c2;
+    }
+    .linkedin:hover i {
+      color: #0a66c2;
+      background: #0a66c2;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px white;
+      text-stroke: 1px white;
+    }
+    .whatsapp:before {
+      background: #25d366;
+    }
+    .whatsapp:hover i {
+      color: #25d366;
+      background: #25d366;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .github:before {
+      background: #24292f;
+    }
+    .github:hover i {
+      color: #24292f;
+      background: #24292f;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

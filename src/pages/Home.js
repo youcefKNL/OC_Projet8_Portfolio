@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section className="home">
       <div className="left-contain">
-        <figcaption className="imagePic  rollerLeft floater"></figcaption>
+        <figcaption className="imagePic  rollerLeft "></figcaption>
       </div>
       <div className=" right-contain">
         <h2>French developers specializing in Fullstack JavaScript</h2>

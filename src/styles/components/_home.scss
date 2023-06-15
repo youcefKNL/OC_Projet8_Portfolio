@@ -1,21 +1,26 @@
 .home {
-  margin: 1% auto 1% auto;
-  max-width: 1400px;
+  margin: 0 auto;
   overflow: hidden;
   letter-spacing: 2px;
-  @media screen and (max-width: 1800px) {
-    margin: 1% 5% 1% 5%;
-  }
-
+  padding: 1% 5% 1% 5%;
   width: 100%;
   height: 70vh;
-  display: flex;
+  @include verticalCenter;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    height: 100%;
+  }
 
   .left-contain {
     @include verticalCenter;
     justify-content: space-between;
     width: 40%;
     height: 100%;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      justify-content: center;
+      //   height: 20vh;
+    }
 
     .imagePic {
       width: 100%;
@@ -23,45 +28,11 @@
       max-width: 500px;
       max-height: 400px;
       background: url("../../assets/photoPortfolio/profile-portfolio.png")
-        center/cover;
-    }
-    .floater {
-      animation-name: floater;
-      -webkit-animation-name: floater;
-      animation-duration: 1.5s;
-      -webkit-animation-duration: 1.5s;
-      -webkit-animation-iteration-count: infinite;
-      //animation-delay: 5s;
-    }
-    .floater {
-      animation-iteration-count: infinite;
-    }
-    @keyframes floater {
-      0%,
-      100% {
-        transform: translateY(0);
+        center/contain no-repeat;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        height: 50vh;
       }
-      50% {
-        transform: translateY(8%);
-      }
-    }
-
-    @-webkit-keyframes floater {
-      0%,
-      100% {
-        -webkit-transform: translateY(0);
-      }
-      50% {
-        -webkit-transform: translateY(8%);
-      }
-    }
-
-    .slideLeft {
-      animation-name: slideLeft;
-      -webkit-animation-name: slideLeft;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      -webkit-animation-timing-function: ease;
     }
 
     .rollerLeft {
@@ -72,6 +43,36 @@
       -webkit-animation-timing-function: ease;
       -webkit-animation-iteration-count: 1;
       animation-fill-mode: forwards;
+      @media screen and (max-width: 900px) {
+        animation-name: floater;
+        -webkit-animation-name: floater;
+        animation-duration: 1.5s;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+
+        .floater {
+          animation-iteration-count: infinite;
+        }
+        @keyframes floater {
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(8%);
+          }
+        }
+
+        @-webkit-keyframes floater {
+          0%,
+          100% {
+            -webkit-transform: translateY(0);
+          }
+          50% {
+            -webkit-transform: translateY(8%);
+          }
+        }
+      }
     }
 
     .rollerLeft {
@@ -97,13 +98,21 @@
         opacity: 1;
       }
     }
+
+    .slideLeft {
+      animation-name: slideLeft;
+      -webkit-animation-name: slideLeft;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-timing-function: ease;
+    }
   }
 
   .right-contain {
     width: 60%;
-    display: flex;
+    //: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     animation-name: fondue;
     animation-duration: 2.5s;
     @keyframes fondue {
@@ -116,15 +125,47 @@
         opacity: 1;
       }
     }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      animation-name: animBottom;
+      animation-duration: 3s;
+      @keyframes animBottom {
+        0% {
+          transform: translateY(200px) rotate(0);
+          opacity: 0;
+        }
+        100% {
+          transform: translatex(0) rotate(0);
+          opacity: 1;
+        }
+      }
+    }
     h2 {
       font-size: 1.5em;
-      padding-bottom: 10%;
+      padding-bottom: 8%;
+      @media screen and (max-width: 450px) {
+        font-size: 1em;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 0.8em;
+      }
     }
 
     p {
       font-size: 1em;
-      line-height: 30px;
+      line-height: 150%;
       text-align: justify;
+      @media screen and (max-width: 1200px) {
+        font-size: 0.9em;
+        line-height: 130%;
+      }
+      @media screen and (max-width: 900px) {
+        font-size: 0.8em;
+        line-height: 110%;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 0.7em;
+      }
     }
   }
 }

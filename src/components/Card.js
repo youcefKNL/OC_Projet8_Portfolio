@@ -1,7 +1,7 @@
 // Card.js
 import React, { useContext, useEffect } from "react";
 import VanillaTilt from "vanilla-tilt";
-import logoReact from "../assets/icon/logo192.png";
+//import logoReact from "../assets/icon/logo192.png";
 //import booki from "../assets/photoPortfolio/booki-removebg-preview.png";
 import { NavLink } from "react-router-dom";
 import { DataContext } from "../components/DataContext";
@@ -26,7 +26,7 @@ const Card = ({ data }) => {
   return (
     <div className="card">
       <div className="logo">
-        <img src={logoReact} alt="logoReact" className="rotate" />
+        <img src={data.icon} alt={data.id} className="rotate" />
       </div>
 
       <div className="content">

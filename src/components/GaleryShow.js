@@ -27,7 +27,7 @@ const GaleryShow = () => {
           <span>Mission :</span> <br /> {selectedData.mission}
         </p>
         <p>
-          <span> Skill developpé : </span>
+          <span> Skill développée : </span>
           <br /> {selectedData.skill}
         </p>
         <p>

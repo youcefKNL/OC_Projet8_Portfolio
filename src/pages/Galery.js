@@ -2,7 +2,6 @@
 import React, { useContext } from "react";
 import { DataContext } from "../components/DataContext";
 import Card from "../components/Card";
-import { useParams } from "react-router-dom";
 
 const Galery = () => {
   const { data } = useContext(DataContext);

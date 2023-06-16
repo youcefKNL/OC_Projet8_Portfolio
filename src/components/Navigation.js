@@ -10,36 +10,40 @@ const Navigation = () => {
           <NavLink
             to="/"
             className={(nav) => (nav.isActive ? "nav-active" : null)}
+            title="Home"
           >
             <li>
-              <p>Acceuil</p> <i class="fa-solid fa-house"></i>
+              <p>Acceuil</p> <i className="fa-solid fa-house"></i>
             </li>
           </NavLink>
 
           <NavLink
             to="/galery"
             className={(nav) => (nav.isActive ? "nav-active" : null)}
+            title="Gallery"
           >
             <li>
-              <p>Galerie</p> <i class="fa-solid fa-image"></i>
+              <p>Galerie</p> <i className="fa-solid fa-image"></i>
             </li>
           </NavLink>
 
           <NavLink
             to="/about"
             className={(nav) => (nav.isActive ? "nav-active" : null)}
+            title="About"
           >
             <li>
-              <p>À Propos</p> <i class="fa-solid fa-circle-info"></i>
+              <p>À Propos</p> <i className="fa-solid fa-circle-info"></i>
             </li>
           </NavLink>
 
           <NavLink
             to="/contact"
             className={(nav) => (nav.isActive ? "nav-active" : null)}
+            title="Contact me"
           >
             <li>
-              <p>Contact</p> <i class="fa-solid fa-address-card"></i>
+              <p>Contact</p> <i className="fa-solid fa-address-card"></i>
             </li>
           </NavLink>
         </ul>

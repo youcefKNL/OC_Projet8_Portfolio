@@ -1,5 +1,5 @@
 {
-  "homepage": "https://youcefknl.github.io/OC_Projet8_Portfolio/",
+  "homepage": "https://youcefknl.github.io/OC_Projet8_Portfolio",
   "name": "portfollio",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +16,7 @@
     "react-router-dom": "^6.12.1",
     "react-scripts": "^5.0.1",
     "sass": "^1.63.3",
+    "vanilla-tilt": "^1.8.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

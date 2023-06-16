@@ -12,7 +12,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
 
@@ -23,7 +23,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-whatsapp"></i>
+              <i className="fa-brands fa-whatsapp"></i>
             </a>
           </li>
 
@@ -34,14 +34,14 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
           </li>
         </ul>
       </div>
 
       <div className="copyright">
-        <i class="fa-regular fa-copyright"></i> 2023 - Tous droits réservés.
+        <i className="fa-regular fa-copyright"></i> 2023 - Tous droits réservés.
         KHENICHIL.
       </div>
     </footer>

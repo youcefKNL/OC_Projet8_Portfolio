@@ -1,0 +1,121 @@
+.card {
+  position: relative;
+  width: 40%;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+
+  @media screen and (max-width: 850px) {
+    width: 80%;
+  }
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    opacity: 0.8;
+
+    img.rotate {
+      animation: rotate 8s linear infinite;
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(400px);
+    opacity: 0;
+    transition: 0.5s;
+    @include verticalCenter;
+    h2 {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 4em;
+      color: rgb(248, 64, 40);
+      pointer-events: none;
+      z-index: 1;
+      margin-bottom: 20px;
+    }
+
+    // h3 {
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   font-size: 1em;
+    //   color: white;
+    //   z-index: 1;
+    //   padding-bottom: 20px;
+    //   width: 100%;
+    // }
+
+    // p {
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   font-size: 1em;
+    //   color: white;
+    //   font-weight: 300;
+    //   padding-bottom: 20px;
+    //   width: 100%;
+    // }
+    img {
+      width: 100%;
+      height: 95%;
+    }
+    a {
+      position: absolute;
+      bottom: 3%;
+      left: 70%;
+      transform: translateX(-50%);
+      display: inline-block;
+      padding: 8px 20px;
+      margin-top: 15px;
+      background: white;
+      color: #000;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      &:hover {
+        background: rgb(248, 64, 40);
+        color: white;
+      }
+    }
+  }
+  &:hover {
+    .content {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    .logo {
+      opacity: 0.2;
+    }
+  }
+}

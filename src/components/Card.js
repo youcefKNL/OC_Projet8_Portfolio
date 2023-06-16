@@ -2,7 +2,7 @@
 import React, { useContext, useEffect } from "react";
 import VanillaTilt from "vanilla-tilt";
 import logoReact from "../assets/icon/logo192.png";
-import booki from "../assets/photoPortfolio/booki-removebg-preview.png";
+//import booki from "../assets/photoPortfolio/booki-removebg-preview.png";
 import { NavLink } from "react-router-dom";
 import { DataContext } from "../components/DataContext";
 
@@ -31,7 +31,7 @@ const Card = ({ data }) => {
 
       <div className="content">
         <h2>{data.title}</h2>
-        <img src={booki} alt="booki" />
+        <img src={data.picture} alt="booki" />
 
         <NavLink
           to={`/galery/${data.id}`}

@@ -3,8 +3,8 @@
 
     {"id":"kasa",
     "title": "REACT",
-    "icon":"https://github.com/youcefKNL/OC_Projet8_Portfolio/icon/logo192.png",
-    "picture":"https://github.com/youcefKNL/OC_Projet8_Portfolio/projectImg/booki-removebg-preview.3efd8222b2d942a39d83.png",
+    "icon":"https://github.com/youcefKNL/OC_Projet8_Portfolio/blob/main/github/icon/logo192.png",
+    "picture":"https://github.com/youcefKNL/OC_Projet8_Portfolio/blob/main/github/projectImg/booki-removebg-preview.png",
     "mission": "Ma mission consistait à développer une application web de location immobilière pour Kasa en utilisant React, dans le but de mettre à jour leur ancien site. J'ai commencé par démarrer le projet React, puis j'ai développé l'ensemble des composants React et les routes React Router en suivant les maquettes Figma fournies. J'ai également intégré les données provenant d'un fichier JSON contenant les 20 dernières annonces de logements, qui a simulé une API.",
     "skill":"Pendant le développement de ce projet, j'ai consolidé mes compétences en React, React Router, JavaScript, SCSS et en conception d'applications web réactives. J'ai également acquis de l'expérience dans l'intégration de données à partir d'une API et dans la manipulation des composants React pour créer une interface utilisateur interactive et réactive. Tout au long du processus, j'ai pu relever les défis liés à la mise à jour d'un site web existant et travailler selon les directives fournies par Kasa. Cette expérience m'a permis d'améliorer ma maîtrise des technologies front-end et de renforcer mes compétences en développement web.",
     "siteUrl":"https://youcefknl.github.io/OC_Projet6_Kasa/",
@@ -14,7 +14,8 @@
     {
         "id": "mon-vieux-grimoire",
         "title": "Node.Js",
-        "picture": "http://localhost:3000/static/media/booki-removebg-preview.3efd8222b2d942a39d83.png",
+        "icon": "https://github.com/youcefKNL/OC_Projet8_Portfolio/blob/main/github/icon/logo192.png",
+        "picture": "https://github.com/youcefKNL/OC_Projet8_Portfolio/blob/main/github/projectImg/booki-removebg-preview.png",
         "mission": "J'ai développé le back-end d'un site de notation de livres appelé 'Mon Vieux Grimoire'. Le site permet aux utilisateurs d'ajouter des livres et de donner une note visible par le public. J'ai construit une API avec un backend Node.js à partir de zéro en utilisant le framework Express et la base de données MongoDB. J'ai également pris en compte les bonnes pratiques de sécurité OWASP Top 10 2023 pour protéger l'application contre les vulnérabilités.",
         "skill": "Pendant le développement de ce projet, j'ai renforcé mes compétences en Node.js, Express et MongoDB. J'ai également approfondi ma connaissance des bonnes pratiques de sécurité pour les applications back-end. J'ai acquis de l'expérience dans la construction d'API, la manipulation de bases de données et la mise en œuvre de fonctionnalités spécifiques au site de notation de livres. Ce projet m'a permis d'améliorer mes compétences en développement back-end et de développer une application sécurisée et performante.",
         "siteUrl": "https://youcefknl.github.io/OC_Projet7_MonVieuxGrimoire/",

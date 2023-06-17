@@ -36,7 +36,7 @@ const Galery = () => {
   if (isLoading) {
     return (
       <div className="spinner-container">
-        <TailSpin color="#000" height={80} width={80} />
+        <TailSpin className="spinner" />
       </div>
     );
   }

@@ -55,6 +55,7 @@
 // };
 import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
+import { TailSpin } from "react-loader-spinner";
 
 export const DataContext = createContext();
 
@@ -82,7 +83,11 @@ export const DataDone = ({ children }) => {
 
   // Afficher le loader tant que les données sont en cours de chargement
   if (loading) {
-    return <div>Chargement en cours...</div>;
+    return (
+      <div className="spinner-container">
+        <TailSpin className="spinner" />
+      </div>
+    );
   }
 
   return (

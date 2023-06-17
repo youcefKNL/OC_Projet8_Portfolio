@@ -14,8 +14,8 @@
     {
         "id": "mon-vieux-grimoire",
         "title": "Node.Js",
-        "icon": "https://github.com/youcefKNL/OC_Projet8_Portfolio/blob/main/github/icon/node.png",
-        "picture": "https://github.com/youcefKNL/OC_Projet8_Portfolio/blob/main/github/projectImg/monvieuxgrimoire-removebg-preview.png",
+        "icon": "https://github.com/youcefKNL/OC_Projet8_Portfolio/blob/main/github/icon/node.png?raw=true",
+        "picture": "https://github.com/youcefKNL/OC_Projet8_Portfolio/blob/main/github/projectImg/monvieuxgrimoire-removebg-preview.png?raw=true",
         "mission": "J'ai développé le back-end d'un site de notation de livres appelé 'Mon Vieux Grimoire'. Le site permet aux utilisateurs d'ajouter des livres et de donner une note visible par le public. J'ai construit une API avec un backend Node.js à partir de zéro en utilisant le framework Express et la base de données MongoDB. J'ai également pris en compte les bonnes pratiques de sécurité OWASP Top 10 2023 pour protéger l'application contre les vulnérabilités.",
         "skill": "Pendant le développement de ce projet, j'ai renforcé mes compétences en Node.js, Express et MongoDB. J'ai également approfondi ma connaissance des bonnes pratiques de sécurité pour les applications back-end. J'ai acquis de l'expérience dans la construction d'API, la manipulation de bases de données et la mise en œuvre de fonctionnalités spécifiques au site de notation de livres. Ce projet m'a permis d'améliorer mes compétences en développement back-end et de développer une application sécurisée et performante.",
         "siteUrl": "https://youcefknl.github.io/OC_Projet7_MonVieuxGrimoire/",

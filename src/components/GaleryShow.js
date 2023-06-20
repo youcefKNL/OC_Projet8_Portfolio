@@ -30,7 +30,7 @@ const GaleryShow = () => {
           <span> Skill développée : </span>
           <br /> {selectedData.skill}
         </p>
-        <p>
+        <div>
           <span>Lien : </span>
           <br />
           <ul>
@@ -39,16 +39,16 @@ const GaleryShow = () => {
               <a href={selectedData.github}> Code Github </a>
             </li>
             <li>
-              <i class="fa-brands fa-internet-explorer"></i>
+              <i className="fa-brands fa-internet-explorer"></i>
               {""}
               <a href={selectedData.siteUrl}> Site web </a>
             </li>
             <li>
-              <i class="fa-brands fa-readme"></i>{" "}
+              <i className="fa-brands fa-readme"></i>{" "}
               <a href={selectedData.moreInfo}> Readme </a>
             </li>
           </ul>
-        </p>
+        </div>
       </div>
       <div className="rightContains">
         <figcaption>

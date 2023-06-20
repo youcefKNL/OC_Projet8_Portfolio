@@ -1,27 +1,7 @@
-// // Galery.js
-// import React, { useContext } from "react";
-// import { DataContext } from "../components/DataContext";
-// import Card from "../components/Card";
-
-// const Galery = () => {
-//   const { data } = useContext(DataContext);
-
-//   return (
-//     <section className="galery">
-//       <h1>Mes réalisations & Projets finis</h1>
-//       {data.map((data) => {
-//         return <Card data={data} key={data.id} />;
-//       })}
-//     </section>
-//   );
-// };
-
-// export default Galery;
-
 import React, { useContext, useState, useEffect } from "react";
 import { DataContext } from "../components/DataContext";
 import Card from "../components/Card";
-import { TailSpin } from "react-loader-spinner";
+import { RotatingLines } from "react-loader-spinner";
 
 const Galery = () => {
   const { data } = useContext(DataContext);
@@ -36,7 +16,14 @@ const Galery = () => {
   if (isLoading) {
     return (
       <div className="spinner-container">
-        <TailSpin className="spinner" />
+        {/* <TailSpin color="#5c29e9" height={300} width={300} /> */}
+        <RotatingLines
+          strokeColor="#8B0000"
+          strokeWidth="5"
+          animationDuration="0.75"
+          width="300"
+          visible={true}
+        />
       </div>
     );
   }

@@ -11,26 +11,31 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Envoyer les données au serveur Node.js avec Nodemailer
-    fetch("https://backportfolio-n0e8.onrender.com/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data); // Afficher la réponse du serveur (facultatif)
-        // Réinitialiser le formulaire
-        setFormData({ name: "", email: "", message: "" });
-      })
-      .catch((error) => {
-        console.error("Erreur:", error);
-      });
+    try {
+      // Envoyer les données au serveur Node.js avec Nodemailer
+      const response = await fetch(
+        "http://localhost:4000/contact" ||
+          "https://backportfolio-n0e8.onrender.com/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const data = await response.json();
+      console.log(data); // Afficher la réponse du serveur (facultatif)
+
+      // Réinitialiser le formulaire
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Erreur:", error);
+    }
   };
 
   return (
@@ -72,7 +77,7 @@ const Contact = () => {
       </form>
       <h3>ou sinon contactez moi via mes réseaux</h3>
       <div className="hand">
-        <i class="fa-regular fa-hand-point-down"></i>
+        <i className="fa-regular fa-hand-point-down"></i>
       </div>
     </div>
   );

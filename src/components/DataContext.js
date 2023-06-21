@@ -55,7 +55,7 @@
 // };
 import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
-import { RotatingLines } from "react-loader-spinner";
+import { PacmanLoader } from "react-spinners";
 
 export const DataContext = createContext();
 
@@ -90,13 +90,9 @@ export const DataDone = ({ children }) => {
   if (loading) {
     return (
       <div className="spinner-container">
-        <RotatingLines
-          strokeColor="#8B0000"
-          strokeWidth="5"
-          animationDuration="0.75"
-          width="300"
-          visible={true}
-        />
+        <h2>Réveil du serveur Render en veille automatique</h2>
+
+        <PacmanLoader color="#91a8d8" size={70} speedMultiplier={2} />
       </div>
     );
   }

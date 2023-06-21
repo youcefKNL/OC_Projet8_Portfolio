@@ -9,6 +9,7 @@ const About = () => {
           <br />
           <ul>
             <li>Sécurité transmission informatique et phonique (VHF)</li>
+            <li>Adaptation travail en équipe ou solo</li>
             <li>Construire un site web responsive et dynamique </li>
             <li>Créer des API et des bases de données </li>
             <li>
@@ -23,19 +24,19 @@ const About = () => {
           <br />
           <ul>
             <li>
-              <span>2005-2010:</span>Engagé au sein de l'Armée de Terre 35 R.I.
+              <span>2016-2022:</span> Conducteur de Métro
+            </li>
+            <li>
+              <span>2010-2016:</span> Conducteur de Bus
+            </li>
+            <li>
+              <span>2005-2010:</span> Engagé au sein de l'Armée de Terre 35 R.I.
             </li>
             <ul className="listInList">
               <li>2 ans Tireur de précision</li>
               <li>6 mois Radio-Tireur</li>
               <li>3 ans Radio-transmission (option graphie)</li>
             </ul>
-            <li>
-              <span>2010-2016:</span> Conducteur de Bus
-            </li>
-            <li>
-              <span>2016-2022:</span> Formation sécurité ferroviaire Métro
-            </li>
           </ul>
           <br />
 
@@ -44,36 +45,35 @@ const About = () => {
 
           <ul>
             <li>
-              <span>2004:</span> Bac STT Gestion (Mention)
+              <span>2023:</span> Titre RNCP Développeur Web auprès
+              d'OpenClassRooms
             </li>
             <li>
-              <span>2005:</span> 1ère année BTS Compta à l'École Nationale de
-              Commerce
+              <span>2016:</span> Formation sécurité ferroviaire
             </li>
             <li>
-              <span>2005:</span> Formation TP
-            </li>
-            <li>
-              <span>2007:</span> Formation RT
+              <span>2010:</span> Formation Transport de voyageurs
             </li>
             <li>
               <span>2007:</span> Formation Transmission et Sécurisation des
               données
             </li>
             <li>
-              <span>2010:</span> Permis Bus
+              <span>2007:</span> Formation Radio Tireur & Chef d'équipe
             </li>
             <li>
-              <span>2016:</span> Permis Metro
+              <span>2005:</span> Formation Tireur Précision
             </li>
             <li>
-              <span>2023:</span> Titre RNCP Développeur Web auprès
-              d'OpenClassRooms
+              <span>2005:</span> 1ère année BTS Compta à l'École Nationale de
+              Commerce
+            </li>
+            <li>
+              <span>2004:</span> Bac STT Gestion (Mention)
             </li>
           </ul>
         </div>
         <div className="rightcontaint">
-          <h2>My Skills</h2>
           <div className="d3viewSkill">
             <span style={{ "--i": 1 }}></span>
             <span style={{ "--i": 2 }}></span>

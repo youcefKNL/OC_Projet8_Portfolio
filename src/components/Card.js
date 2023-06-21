@@ -37,7 +37,7 @@ const Card = ({ data }) => {
           className="project-link"
           onClick={() => selectData(data.id)}
         >
-          more
+          plus d'infos
         </NavLink>
       </div>
     </div>

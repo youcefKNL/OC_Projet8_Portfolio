@@ -16,21 +16,18 @@ const GaleryShow = () => {
   return (
     <section className="projectShow">
       <div className="leftContains">
-        <h2>
-          <span>Site : </span>
-          {selectedData.id}
-        </h2>
+        <h2>{selectedData.id}</h2>
         <h3>
-          <span>Technologie :</span> {selectedData.title}
+          <span>Technologie :</span> <br /> {selectedData.technologie}
         </h3>
-        <p>
+        <h3>
           <span>Mission :</span> <br /> {selectedData.mission}
-        </p>
-        <p>
+        </h3>
+        <h3>
           <span> Skill développée : </span>
           <br /> {selectedData.skill}
-        </p>
-        <div>
+        </h3>
+        <div className="linkCode">
           <span>Lien : </span>
           <br />
           <ul>

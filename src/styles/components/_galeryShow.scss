@@ -1,8 +1,8 @@
 .projectShow {
   width: 90%;
-  padding: 2%;
+  padding: 1% 2%;
   height: 100%;
-  margin: 2% 5%;
+  margin: 1% 5% 0 5%;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.336);
@@ -13,6 +13,9 @@
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
+  @media screen and (max-width: 850px) {
+    flex-direction: column-reverse;
+  }
 
   .leftContains {
     height: 100%;
@@ -20,8 +23,26 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    font-family: Poppins;
+    font-size: 0.7em;
+    font-weight: 200;
+    line-height: 18px;
+    @media screen and (max-width: 850px) {
+      width: 100%;
+    }
+    h2 {
+      text-align: center;
+      font-family: Manga;
+      font-size: 2em;
+      padding-bottom: 2%;
+    }
+    h3 {
+      padding-bottom: 1%;
+    }
     span {
-      color: rgb(248, 64, 40);
+      color: $color-1;
+      font-family: Manga;
+      font-size: 18px;
     }
     ul {
       @include verticalCenter;
@@ -29,7 +50,7 @@
         @include verticalCenter;
         margin: 2%;
         &:hover {
-          color: rgb(248, 64, 40);
+          color: $color-3;
         }
         i {
           padding: 10px;

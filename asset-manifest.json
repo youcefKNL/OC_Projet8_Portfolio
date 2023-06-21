@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/OC_Projet8_Portfolio/static/css/main.a15bd629.css",
+    "main.css": "/OC_Projet8_Portfolio/static/css/main.08380b04.css",
     "main.js": "/OC_Projet8_Portfolio/static/js/main.1b4b4539.js",
     "static/media/owasp.png": "/OC_Projet8_Portfolio/static/media/owasp.cabcdfe5c8cd05956eb5.png",
     "static/media/github2.png": "/OC_Projet8_Portfolio/static/media/github2.2579d2f74d233c7302e6.png",
@@ -13,11 +13,11 @@
     "static/media/pngwing.com (2).png": "/OC_Projet8_Portfolio/static/media/pngwing.com (2).a14da06bec512b9effa3.png",
     "static/media/go3v2.ttf": "/OC_Projet8_Portfolio/static/media/go3v2.59287eb584ab9acf3e25.ttf",
     "index.html": "/OC_Projet8_Portfolio/index.html",
-    "main.a15bd629.css.map": "/OC_Projet8_Portfolio/static/css/main.a15bd629.css.map",
+    "main.08380b04.css.map": "/OC_Projet8_Portfolio/static/css/main.08380b04.css.map",
     "main.1b4b4539.js.map": "/OC_Projet8_Portfolio/static/js/main.1b4b4539.js.map"
   },
   "entrypoints": [
-    "static/css/main.a15bd629.css",
+    "static/css/main.08380b04.css",
     "static/js/main.1b4b4539.js"
   ]
 }

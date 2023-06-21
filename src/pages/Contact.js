@@ -17,12 +17,13 @@ const Contact = () => {
     try {
       // Envoyer les données au serveur Node.js avec Nodemailer
       const response = await fetch(
-        "http://localhost:4000/contact" ||
-          "https://backportfolio-n0e8.onrender.com/contact",
+        "https://clever-pear-centipede.cyclic.app/contact" ||
+          "http://localhost:4000/contact",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            Authorization: `Basic ${btoa(`cyclic:Cyclic+91`)}`,
           },
           body: JSON.stringify(formData),
         }
@@ -35,6 +36,9 @@ const Contact = () => {
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("Erreur:", error);
+      alert(
+        "Une erreur s'est produite lors de l'envoi du formulaire. (Free server)\n\n Veuillez me contacter via d'autres liens."
+      );
     }
   };
 

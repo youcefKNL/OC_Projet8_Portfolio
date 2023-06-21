@@ -66,7 +66,10 @@ export const DataDone = ({ children }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = "https://backportfolio-n0e8.onrender.com/project";
+      const url =
+        "https://backportfolio-n0e8.onrender.com/project" ||
+        "https://clever-pear-centipede.cyclic.app/project";
+
       try {
         const response = await axios.get(url);
         const jsonData = response.data;
@@ -90,7 +93,7 @@ export const DataDone = ({ children }) => {
   if (loading) {
     return (
       <div className="spinner-container">
-        <h2>Réveil du serveur Render en veille automatique</h2>
+        <h2>Réveil du serveur Render / Cyclic en veille automatique</h2>
 
         <PacmanLoader color="#91a8d8" size={70} speedMultiplier={2} />
       </div>

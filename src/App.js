@@ -12,7 +12,7 @@ import GaleryShow from "./components/GaleryShow";
 const App = () => {
   let basename = "/";
   if (window.location.hostname === "youcefknl.github.io") {
-    basename = "/OC_Projet8_Portfolio";
+    basename = "/portfolio";
   }
   return (
     <BrowserRouter basename={basename}>

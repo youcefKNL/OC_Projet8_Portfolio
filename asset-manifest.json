@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/OC_Projet8_Portfolio/static/css/main.08380b04.css",
-    "main.js": "/OC_Projet8_Portfolio/static/js/main.27eb898f.js",
-    "static/media/owasp.png": "/OC_Projet8_Portfolio/static/media/owasp.cabcdfe5c8cd05956eb5.png",
-    "static/media/github2.png": "/OC_Projet8_Portfolio/static/media/github2.2579d2f74d233c7302e6.png",
-    "static/media/profile-portfolio.png": "/OC_Projet8_Portfolio/static/media/profile-portfolio.aa95ccefc9cea3add55c.png",
-    "static/media/seo.png": "/OC_Projet8_Portfolio/static/media/seo.4f4ff25b4b3af3534b98.png",
-    "static/media/linux.png": "/OC_Projet8_Portfolio/static/media/linux.cf61c762cb518553dfb0.png",
-    "static/media/puppeteer.png": "/OC_Projet8_Portfolio/static/media/puppeteer.e7d6fd35c4db41296fd1.png",
-    "static/media/mongodb.png": "/OC_Projet8_Portfolio/static/media/mongodb.f7f719beeb05aa77e276.png",
-    "static/media/nodejs.png": "/OC_Projet8_Portfolio/static/media/nodejs.c2130150ac625a597d91.png",
-    "static/media/pngwing.com (2).png": "/OC_Projet8_Portfolio/static/media/pngwing.com (2).a14da06bec512b9effa3.png",
-    "static/media/go3v2.ttf": "/OC_Projet8_Portfolio/static/media/go3v2.59287eb584ab9acf3e25.ttf",
-    "index.html": "/OC_Projet8_Portfolio/index.html",
-    "main.08380b04.css.map": "/OC_Projet8_Portfolio/static/css/main.08380b04.css.map",
-    "main.27eb898f.js.map": "/OC_Projet8_Portfolio/static/js/main.27eb898f.js.map"
+    "main.css": "/portfolio/static/css/main.c6d2cca3.css",
+    "main.js": "/portfolio/static/js/main.cf3425ea.js",
+    "static/media/owasp.png": "/portfolio/static/media/owasp.cabcdfe5c8cd05956eb5.png",
+    "static/media/github2.png": "/portfolio/static/media/github2.2579d2f74d233c7302e6.png",
+    "static/media/profile-portfolio.png": "/portfolio/static/media/profile-portfolio.aa95ccefc9cea3add55c.png",
+    "static/media/seo.png": "/portfolio/static/media/seo.4f4ff25b4b3af3534b98.png",
+    "static/media/linux.png": "/portfolio/static/media/linux.cf61c762cb518553dfb0.png",
+    "static/media/puppeteer.png": "/portfolio/static/media/puppeteer.e7d6fd35c4db41296fd1.png",
+    "static/media/mongodb.png": "/portfolio/static/media/mongodb.f7f719beeb05aa77e276.png",
+    "static/media/nodejs.png": "/portfolio/static/media/nodejs.c2130150ac625a597d91.png",
+    "static/media/pngwing.com (2).png": "/portfolio/static/media/pngwing.com (2).a14da06bec512b9effa3.png",
+    "static/media/go3v2.ttf": "/portfolio/static/media/go3v2.59287eb584ab9acf3e25.ttf",
+    "index.html": "/portfolio/index.html",
+    "main.c6d2cca3.css.map": "/portfolio/static/css/main.c6d2cca3.css.map",
+    "main.cf3425ea.js.map": "/portfolio/static/js/main.cf3425ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.08380b04.css",
-    "static/js/main.27eb898f.js"
+    "static/css/main.c6d2cca3.css",
+    "static/js/main.cf3425ea.js"
   ]
 }

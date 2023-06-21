@@ -38,7 +38,7 @@
       }
 
       i {
-        color: #fff;
+        color: $white;
         position: absolute;
         top: 17px;
         left: 17px;
@@ -95,8 +95,8 @@
         background: #0a66c2;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 1px white;
-        text-stroke: 1px white;
+        -webkit-text-stroke: 1px $white;
+        text-stroke: 1px $white;
       }
       .whatsapp:before {
         background: #25d366;

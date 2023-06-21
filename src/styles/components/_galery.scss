@@ -1,13 +1,12 @@
 .galery {
-  //   margin: 0 auto;
   position: relative;
   @include verticalCenter;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 70vh;
+  height: 100%;
   h1 {
     width: 100%;
     text-align: center;
-    margin: 2% auto 2% auto;
+    margin: 1% auto 2% auto;
   }
 }

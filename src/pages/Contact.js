@@ -13,7 +13,6 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       // Envoyer les données au serveur Node.js avec Nodemailer
       const response = await fetch(
@@ -23,7 +22,7 @@ const Contact = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Basic ${btoa(`cyclic:Cyclic+91`)}`,
+            Authorization: `Basic ${btoa("cyclic:Cyclic+91")}`,
           },
           body: JSON.stringify(formData),
         }
@@ -36,9 +35,18 @@ const Contact = () => {
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("Erreur:", error);
-      alert(
-        "Une erreur s'est produite lors de l'envoi du formulaire. (Free server)\n\n Veuillez me contacter via d'autres liens."
-      );
+      if (
+        error.message ===
+        "JSON.parse: unexpected character at line 1 column 1 of the JSON data"
+      ) {
+        alert(
+          "Le serveur a renvoyé une erreur de syntaxe JSON. Veuillez me contacter via d'autres liens."
+        );
+      } else {
+        alert(
+          "Une erreur s'est produite lors de l'envoi du formulaire. (Free server)\n\n Veuillez me contacter via d'autres liens."
+        );
+      }
     }
   };
 

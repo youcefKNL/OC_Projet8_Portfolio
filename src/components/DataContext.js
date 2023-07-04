@@ -66,10 +66,10 @@ export const DataDone = ({ children }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url =
-        "../../data/data.json" ||
-        "https://clever-pear-centipede.cyclic.app/project" ||
-        "https://backportfolio-n0e8.onrender.com/project";
+      const url = "../../data/data.json";
+      // ||
+      // "https://clever-pear-centipede.cyclic.app/project" ||
+      // "https://backportfolio-n0e8.onrender.com/project";
       try {
         const response = await axios.get(url);
         const jsonData = response.data;

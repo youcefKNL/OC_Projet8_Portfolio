@@ -66,7 +66,7 @@ export const DataDone = ({ children }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = "../data/data.json";
+      const url = "../data/project.json";
       // ||
       // "https://clever-pear-centipede.cyclic.app/project" ||
       // "https://backportfolio-n0e8.onrender.com/project";

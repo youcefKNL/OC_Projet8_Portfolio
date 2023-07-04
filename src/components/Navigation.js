@@ -13,7 +13,7 @@ const Navigation = () => {
             title="Home"
           >
             <li>
-              <p>Acceuil</p> <i className="fa-solid fa-house"></i>
+              <p>Accueil</p> <i className="fa-solid fa-house"></i>
             </li>
           </NavLink>
 

@@ -8,7 +8,7 @@ const Home = () => {
         <figcaption className="imagePic  rollerLeft "></figcaption>
       </div>
       <div className=" right-contain">
-        <h2>Développeurs FullStack "Agile" spécialisés en JavaScript</h2>
+        <h2>Développeur FullStack "Agile" spécialisés en JavaScript</h2>
         <p>
           Explorez mon portfolio dynamique et innovant !<br /> Plongez dans
           l'univers fascinant des technologies, où chaque projet est une
